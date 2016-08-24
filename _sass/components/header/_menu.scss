@@ -1,5 +1,5 @@
 .main-menu {
-    background-color: rgba($white, .9);
+    background-color: rgba($white, .8);
     display: block;
     position: relative;
     width: 100%;
@@ -30,7 +30,7 @@
     vertical-align: -0.3em;
 
     &:hover {
-        border-bottom-color: $gray-light;
+        border-bottom-color: rgba($gray-mid, .3);
         color: $green-bright;
     }
 }
