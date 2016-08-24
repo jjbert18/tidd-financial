@@ -1,0 +1,33 @@
+.hero {
+    background-image: url('/img/puzzle_dollar_money.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    width: 100%;
+}
+
+.hero:after {
+    background-color: rgba($blue-dark, .7);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hero_tagline {
+    position: relative;
+    z-index: 100;
+}
+
+.hero_tagline__text {
+    margin-top: 1.25em;
+
+    @include break(md) {
+        width: 60%;
+    }
+}

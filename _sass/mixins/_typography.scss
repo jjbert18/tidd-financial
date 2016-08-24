@@ -1,0 +1,15 @@
+/*
+ * typography.scss
+ */
+
+@mixin sans-font {
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin serif-font {
+    font-family: 'Libre Baskerville', serif;
+}
+
+// @mixin display-font {
+//     font-family: 'Playfair Display', serif;
+// }

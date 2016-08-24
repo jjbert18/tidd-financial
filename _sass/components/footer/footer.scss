@@ -1,0 +1,16 @@
+.footer {
+    background-color: $gray-dark;
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer__copyright {
+    @include sans-font;
+    color: $black;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+}

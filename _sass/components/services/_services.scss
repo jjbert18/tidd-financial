@@ -1,0 +1,33 @@
+.services {
+    margin: 1em auto 3em;
+}
+
+.service-item {
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+
+    @include break(md) {
+        width: 32%
+    }
+}
+
+.service-item__icon {
+    color: $blue-bright;
+    font-size: 2em;
+    margin-bottom: .35em;
+}
+
+.service-item__title {
+    border-bottom: 1px solid $gray-light;
+    color: $blue-bright;
+    font-size: 1.5rem;
+    margin-bottom: .5em;
+    padding-bottom: .25em;
+}
+
+.service-item__description {
+    @include sans-font;
+    color: $gray-mid;
+}

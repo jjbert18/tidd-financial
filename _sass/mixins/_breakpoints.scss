@@ -1,0 +1,22 @@
+// Breakpoints
+// -------------------------------------------------------
+
+// example: @include break(sm) { style }
+@mixin break($class) {
+
+    @if $class == sm {
+        @media (min-width: $mobile-width) { @content; }
+    }
+
+    @else if $class == md {
+        @media (min-width: $tablet-width) { @content; }
+    }
+
+    @else if $class == lg {
+        @media (min-width: $desktop-width) { @content; }
+    }
+
+    @else {
+        @warn "Breakpoint mixin supports: sm, md, lg";
+    }
+}

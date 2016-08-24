@@ -1,0 +1,36 @@
+.main-menu {
+    background-color: rgba($white, .9);
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+.main-menu__logo {
+    color: $blue-bright;
+    float: left;
+}
+
+.main-menu__navigation {
+    float: right;
+    margin: 0;
+}
+
+.main-menu__navigation-item {
+    display: inline-block;
+    padding: 0 1em;
+    vertical-align: middle;
+}
+
+.main-menu__navigation-item a {
+    border-bottom: 1px solid transparent;
+    color: $gray-mid;
+    padding: 0 1em;
+    transition: 300ms all;
+    vertical-align: -0.3em;
+
+    &:hover {
+        border-bottom-color: $gray-light;
+        color: $green-bright;
+    }
+}

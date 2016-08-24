@@ -1,0 +1,12 @@
+/*
+ * layout.scss
+ */
+
+.container {
+    margin: 0 auto;
+    padding: 1em;
+
+    @include break(md) {
+       width: $tablet-width;
+   }
+}

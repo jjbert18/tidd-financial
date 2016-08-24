@@ -1,0 +1,35 @@
+/*
+ * global.scss
+ */
+ @import 'vars/vars';
+ @import "mixins/mixins";
+ @import "typography";
+ @import "layout";
+ @import "components/components";
+
+*,
+*:before,
+*:after {
+
+    box-sizing: border-box;
+}
+
+body {
+    @include serif-font;
+	color: $gray-mid;
+	font-size: $base-font-size;
+    letter-spacing: .025em;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+
+.hidden-mobile {
+	display: none;
+
+	@media screen and (min-width:$mobile-width) {
+		display: block;
+	}
+
+}

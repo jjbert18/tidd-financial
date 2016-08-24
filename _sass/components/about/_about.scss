@@ -1,0 +1,64 @@
+.about-me {
+    background-color: $gray-light;
+    height: 600px;
+    position: relative;
+}
+
+.about-me__photo,
+.about-me__description {
+    display: inline-block;
+    width: 35%;
+}
+
+.about-me__photo {
+    background-image: url('/img/about-placeholder.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+}
+
+.about-me__description {
+    padding: 1em;
+    position: relative;
+    float: right;
+    width: 64%;
+}
+
+.about-me__description-content,
+.about-me__contact-info {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    vertical-align: middle;
+}
+
+.about-me__contact-info {
+    padding-left: 5em;
+}
+
+.contact-info__item {
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.contact-info__item-icon {
+    color: $blue-bright;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    width: 50px;
+    vertical-align: middle;
+    top: 25%;
+}
+
+.contact-info__item-number {
+    border-left: 2px solid $gray-mid;
+    display: inline-block;
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 1em;
+    padding-top: .35em;
+    margin-left: 50px;
+}
