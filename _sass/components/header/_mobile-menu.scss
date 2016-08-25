@@ -1,0 +1,27 @@
+.main-menu__navigation {
+    background: white;
+    display: none;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+
+    @include break(md) {
+        background: transparent;
+        display: block !important;
+        float: right;
+        margin: 0;
+        position: relative;
+        width: auto;
+    }
+}
+
+.main-menu__navigation-item {
+    display: block;
+    padding: 1em;
+
+    @include break(md) {
+        display: inline-block;
+        padding: 0 1em;
+    }
+}

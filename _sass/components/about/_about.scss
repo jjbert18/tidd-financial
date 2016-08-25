@@ -1,42 +1,65 @@
-.about-me {
+.about-us {
     background-color: $gray-light;
-    height: 600px;
+    min-height: 600px;
     position: relative;
+
+    @include break(md) {
+
+    }
 }
 
-.about-me__photo,
-.about-me__description {
-    display: inline-block;
-    width: 35%;
+.about-us__photo,
+.about-us__description {
+    display: block;
+
+    @include break(md) {
+        display: inline-block;
+        width: 35%;
+    }
 }
 
-.about-me__photo {
+.about-us__photo {
     background-image: url('/img/about-placeholder.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    position: absolute;
-}
-
-.about-me__description {
-    padding: 1em;
-    padding-right: 14%;
+    height: 400px;
+    width: 100%;
     position: relative;
-    float: right;
-    width: 64%;
+
+    @include break(md) {
+        height: 100%;
+        position: absolute;
+        width: 30%;
+    }
 }
 
-.about-me__description-content,
-.about-me__contact-info {
-    display: inline-block;
-    width: 49%;
+.about-us__description {
+    padding: 1em;
+    position: relative;
+
+    @include break(md) {
+        padding-right: 14%;
+        float: right;
+        width: 64%;
+    }
+}
+
+.about-us__description-content,
+.about-us__contact-info {
     padding: 1em;
     vertical-align: middle;
+
+    @include break(md) {
+        display: inline-block;
+        width: 49%;
+    }
 }
 
-.about-me__contact-info {
-    padding-left: 5em;
+.about-us__contact-info {
+    @include break(md) {
+        padding-left: 5em;
+    }
 }
 
 .contact-info__item {
@@ -62,4 +85,5 @@
     padding-left: 1em;
     padding-top: .35em;
     margin-left: 50px;
+    word-break: break-word;
 }

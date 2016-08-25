@@ -1,19 +1,22 @@
 .main-menu {
-    background-color: rgba($white, .8);
+    background-color: $white;
     display: block;
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 100;
+
+    @include break(md) {
+        background-color: rgba($white, .8);
+    }
 }
 
 .main-menu__logo {
     color: $blue-bright;
-    float: left;
-}
+    text-align: center;
 
-.main-menu__navigation {
-    float: right;
-    margin: 0;
+    @include break(md) {
+        float: left;
+    }
 }
 
 .main-menu__navigation-item {

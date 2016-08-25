@@ -1,11 +1,15 @@
 .hero {
     background-image: url('/img/puzzle_dollar_money.jpg');
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    min-height: 350px;
     position: relative;
     width: 100%;
+
+    @include break(md) {
+        background-position: top center;
+    }
 }
 
 .hero:after {
@@ -21,11 +25,12 @@
 
 .hero_tagline {
     position: relative;
-    z-index: 100;
+    z-index: 50;
 }
 
 .hero_tagline__text {
-    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    margin-top: 2.5em;
 
     @include break(md) {
         width: 60%;

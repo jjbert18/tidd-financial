@@ -11,13 +11,16 @@ h4 {
 }
 
 h1 {
-    margin: 0;
 }
 
 h2 {
     color: $white;
-    font-size: 45px;
+    font-size: 35px;
     line-height: 1.5em;
+
+    @include break(md) {
+        font-size: 45px;
+    }
 }
 
 h3 {

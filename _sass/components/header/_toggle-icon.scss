@@ -1,0 +1,80 @@
+$menu-icon-size: 30px; // icon scale magic #
+$menu-icon-bar-spacing: floor($menu-icon-size / 3);
+$menu-icon-bar-height: floor($menu-icon-size / 7.5);
+$border-radius: floor($menu-icon-size * 0.25);
+
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    z-index: 1000;
+}
+
+.menu-icon__icon-bars {
+    cursor: pointer;
+    height: $menu-icon-size;
+    position: relative;
+    margin: 0 auto;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    width: $menu-icon-size;
+
+    @include break(md) {
+        display: none;
+    }
+}
+
+.menu-icon__icon-bars span {
+    background: $blue-bright;
+    border-radius: $border-radius;
+    display: block;
+    height: $menu-icon-bar-height;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    width: 100%;
+}
+
+
+.menu-icon__icon-bars span {
+
+    &:nth-child(1) {
+        top: 0;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        top: $menu-icon-bar-spacing;
+    }
+
+    &:nth-child(4) {
+        top: $menu-icon-bar-spacing * 2;
+    }
+}
+
+.menu-icon.jsa-open .menu-icon__icon-bars span {
+
+    &:nth-child(1),
+    &:nth-child(4) {
+        left: 50%;
+        width: 0%;
+    }
+
+    &:nth-child(1) {
+        top: $menu-icon-bar-spacing;
+    }
+
+    &:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+
+    &:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    &:nth-child(4) {
+        top: $menu-icon-bar-spacing;
+    }
+}
