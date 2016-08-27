@@ -58,7 +58,7 @@
 
 .about-us__contact-info {
     @include break(md) {
-        padding-left: 5em;
+        padding-left: 3%;
     }
 }
 
@@ -86,4 +86,8 @@
     padding-top: .35em;
     margin-left: 50px;
     word-break: break-word;
+}
+
+.company-name {
+    font-weight: bold;
 }
