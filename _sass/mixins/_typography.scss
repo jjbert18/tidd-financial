@@ -3,13 +3,9 @@
  */
 
 @mixin sans-font {
-    font-family: 'Raleway', sans-serif;
+    font-family: $font-sans;
 }
 
 @mixin serif-font {
-    font-family: 'Libre Baskerville', serif;
+    font-family: $font-serif;
 }
-
-// @mixin display-font {
-//     font-family: 'Playfair Display', serif;
-// }
