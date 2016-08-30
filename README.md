@@ -1,2 +1,2 @@
-# jacob-berthelsen
-Homebase site for Jacob Berthelsen
+# tidd-financial-inc
+Website for Tidd Financial, INC.

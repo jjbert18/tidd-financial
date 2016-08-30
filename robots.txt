@@ -1,4 +1,4 @@
 User-Agent: *
-Disallow: 
+Disallow:
 
-Sitemap: http://www.jhobert.com/sitemap.xml
+Sitemap: http://www.tiddfinancial.com/sitemap.xml
