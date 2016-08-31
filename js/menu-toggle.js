@@ -7,6 +7,7 @@ $(document).ready(function() {
     $('.main-menu__navigation-item').click(function(){
         var query = Modernizr.mq('(max-width: 776px)');
         if (query) {
+            $('.js-menu-icon-toggle').removeClass('jsa-open');
             $('.main-menu__navigation').slideUp();
         }
     });
