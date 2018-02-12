@@ -1,5 +1,5 @@
 .services {
-    margin: 1em auto 3em;
+    margin: 1em auto;
 }
 
 .service-item {
@@ -12,11 +12,23 @@
     @include break(md) {
         width: 32%
     }
+
+    &:first-of-type {
+        @include break(md) {
+            padding-left: 0;
+        }
+    }
+
+    &:last-of-type {
+        @include break(md) {
+            padding-right: 0;
+        }
+    }
 }
 
 .service-item__icon {
     color: $blue-bright;
-    font-size: 2em;
+    font-size: 4rem;
     margin-bottom: .35em;
 }
 
@@ -31,4 +43,16 @@
 .service-item__description {
     @include sans-font;
     color: $gray-mid;
+}
+
+.services.four-column {
+    .service-item {
+        @include break(sm) {
+            width: 49%;
+        }
+
+        @include break(md) {
+            width: 24%
+        }
+    }
 }
