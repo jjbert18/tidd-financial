@@ -8,7 +8,7 @@
 
 .footer__copyright {
     @include sans-font;
-    color: $black;
+    color: rgba($gray-light, 0.75);
     display: block;
     font-size: 12px;
     text-align: center;
